@@ -10,6 +10,10 @@ fi
 app="shifter"
 target="/srv/$app"
 
+# delete databases
+#rails db:drop
+#sudo -i -u postgres dropuser shifter;
+
 # remove install
 rm -rf \
 	$target \

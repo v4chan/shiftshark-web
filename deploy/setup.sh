@@ -18,4 +18,9 @@ echo -e "$white :: Installing bundler and building bundle... :: $no_colour"
 gem install bundler
 bundle install --path vendor/bundle
 
+echo -e "$white :: Setting up database... :: $no_colour"
+sudo -i -u postgres initdb --locale $LANG -E UTF8 -D '/var/lib/postgres/data'
+sudo -i -u postgres psql -c "create role shifter with createdb login password 'shifter';"
+rails db:create db:migrate
+
 echo -e "$white :: Done! :: $no_colour"
