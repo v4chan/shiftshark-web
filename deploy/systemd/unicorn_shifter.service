@@ -1,0 +1,12 @@
+[Unit]
+Description=Unicorn ShiftShark Server
+After=network.target
+
+[Service]
+Type=forking
+User=shifter
+WorkingDirectory=/srv/shifter
+ExecStart=unicorn_rails -D -E production -c config/unicorn.rb
+
+[Install]
+WantedBy=multi-user.target

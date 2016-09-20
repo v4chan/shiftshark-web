@@ -83,5 +83,5 @@ test:
 production:
   <<: *default
   database: shifter
-  username: shifter
+  username: <%= ENV['SHIFTER_DB_USER'] %>
   password: <%= ENV['SHIFTER_DB_PASS'] %>
