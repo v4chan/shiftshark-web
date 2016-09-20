@@ -1,12 +1,15 @@
 #!/bin/bash
 
-white="\[\e[1;37m\]"
-no_colour="\[\e[0m\]"
+white="\e[1;37m"
+no_colour="\e[0m"
 
-echo -e "$white :: Installing ruby... :: $no_colour"
+echo -e "$white :: Installing ruby and postgresql... :: $no_colour"
 pacman -Qi ruby &> /dev/null
 [[ $? != 0 ]] &&
 	sudo pacman -Syu ruby || :
+pacman -Qi postgresql &> /dev/null
+[[ $? != 0 ]] &&
+	sudo pacman -Syu postgresql || :
 
 echo -e "$white :: Installing pacgem... :: $no_colour"
 yaourt -Sa pacgem
