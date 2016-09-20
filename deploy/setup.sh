@@ -16,6 +16,6 @@ yes | pacgem 'rails~>5.0.0' 'unicorn~>5.1'
 
 echo -e "$white :: Installing bundler and building bundle... :: $no_colour"
 gem install bundler
-bundle
+bundle install --path vendor/bundle
 
 echo -e "$white :: Done! :: $no_colour"

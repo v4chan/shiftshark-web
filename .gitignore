@@ -2,6 +2,7 @@
 *.bowerrc
 *.rbc
 .byebug_history
+.bundle
 .DS_Store
 .env
 .powenv
