@@ -178,8 +178,9 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
-  devise
-  dotenv-rails
+  devise (~> 4.2)
+  dotenv (~> 2.1)
+  dotenv-rails (~> 2.1)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

@@ -24,8 +24,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 
-gem 'dotenv-rails'
-gem 'devise'
+gem 'dotenv', '~> 2.1'
+gem 'dotenv-rails', '~> 2.1'
+
+gem 'devise', '~> 4.2'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

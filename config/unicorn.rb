@@ -1,11 +1,14 @@
+require 'dotenv'
+Dotenv.load
+
 # set path to application
 app_dir = File.expand_path("../..", __FILE__)
 shared_dir = "#{app_dir}/shared"
 working_directory app_dir
-port = ENV.fetch("RAILS_PORT") { 3000 }
+port = ENV.fetch("RAILS_PORT", 3000 )
 
 # Set unicorn options
-worker_processes ENV.fetch("RAILS_WORKERS") { 3000 }
+worker_processes ENV.fetch("RAILS_WORKERS", 2 ).to_i
 preload_app true
 timeout 30
 

@@ -20,7 +20,10 @@ cp -r . $target
 
 # set ownership of installed files
 # ( but not target dir itself )
-chown -R $owner:$group $target/*
+chown -R $owner:$group $target/* $target/.*
+
+# bundle setup
+(cd $target && sudo -u http bundle install --path vendor/bundle)
 
 # if necessary, set up symlinks
 [[ ! -L /etc/systemd/system/unicorn_$app.service ]] &&

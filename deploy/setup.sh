@@ -15,7 +15,7 @@ echo -e "$white :: Installing pacgem... :: $no_colour"
 yaourt -Sa pacgem
 
 echo -e "$white :: Installing rails and unicorn... :: $no_colour"
-yes | pacgem 'rails~>5.0.0' 'unicorn~>5.1'
+yes | pacgem 'rails~>5.0.0' 'unicorn~>5.1' 'dotenv~>2.1'
 
 echo -e "$white :: Installing bundler and building bundle... :: $no_colour"
 gem install bundler
