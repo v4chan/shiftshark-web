@@ -30,7 +30,3 @@ chown -R $owner:$group $target/*
 [[ ! -L /etc/nginx/servers/$app.conf ]] &&
 	ln -s $target/deploy/nginx/$app.conf \
 		/etc/nginx/servers/$app.conf || :
-
-# setup database?
-#sudo -i -u postgres psql -c "create role shifter with createdb login password 'shifter';"
-#rails db:create db:migrate
