@@ -4,9 +4,9 @@ After=network.target
 
 [Service]
 Type=forking
-User=shifter
+User=http
 WorkingDirectory=/srv/shifter-beta
-ExecStart=/usr/bin/unicorn -D -E beta -c config/unicorn.rb
+ExecStart=/usr/bin/bundle exec unicorn -D -E beta -c config/unicorn.rb
 
 [Install]
 WantedBy=multi-user.target

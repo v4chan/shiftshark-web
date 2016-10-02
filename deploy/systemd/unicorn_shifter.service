@@ -6,7 +6,7 @@ After=network.target
 Type=forking
 User=http
 WorkingDirectory=/srv/shifter
-ExecStart=/usr/bin/unicorn -D -E production -c config/unicorn.rb
+ExecStart=/usr/bin/bundle exec unicorn -D -E production -c config/unicorn.rb
 
 [Install]
 WantedBy=multi-user.target
