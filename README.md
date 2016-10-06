@@ -1,28 +1,10 @@
 # README
 
-<<<<<<< HEAD
-Adding stuff
-=======
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Shift Shark Logs
+=================
+This is a tracking of stuff done for this projects
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
->>>>>>> cf665000bda52850f33262f73a3662aab060a6c8
-
-* ...
+* Devise add for user authenitication - Leo
+* Devise add the correct columns on the SQL database - Leo
+* Studio has for studio tracking - Leo
+* Studio add the correct columns on the SQL database -Leo
