@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :user_resources
+  resources :studios
   devise_for :users
 
   root 'welcome#index'

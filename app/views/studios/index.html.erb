@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Studios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Addr1</th>
+      <th>Addr2</th>
+      <th>Phone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @studios.each do |studio| %>
+      <tr>
+        <td><%= studio.name %></td>
+        <td><%= studio.addr1 %></td>
+        <td><%= studio.addr2 %></td>
+        <td><%= studio.phone %></td>
+        <td><%= link_to 'Show', studio %></td>
+        <td><%= link_to 'Edit', edit_studio_path(studio) %></td>
+        <td><%= link_to 'Destroy', studio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Studio', new_studio_path %>
