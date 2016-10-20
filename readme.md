@@ -1,13 +1,31 @@
 # ShiftShark
 
-## development setup (archlinux)
+## Development Setup (general)
+
+Install Postgres, ruby, bundler. If necessary, add users to postgres (see dev.env file for username).
+
+Install gems, set up database as follows:
+
+```bash
+bundle install
+rake db:create
+rake db:migrate
+```
+
+Launch the server, and you're ready to go:
+
+```bash
+rails server
+```
+
+## Development Setup (archlinux)
 
 ```bash
 deploy/setup.sh
 deploy/db.sh
 ```
 
-## deployment (archlinux)
+## Deployment (archlinux)
 First install the app. Replace `target.env` with the desired env file.
 
 ```bash

@@ -11,11 +11,11 @@ pacman -Qi postgresql &> /dev/null
 [[ $? != 0 ]] &&
 	sudo pacman -Syu postgresql || :
 
-echo -e "$white :: Installing pacgem... :: $no_colour"
-yaourt -Sa pacgem
+echo -e "$white :: Installing pacgem, rails... :: $no_colour"
+yaourt -Sa pacgem ruby-rails
 
 echo -e "$white :: Installing rails and unicorn... :: $no_colour"
-yes | pacgem 'rails~>5.0.0' 'unicorn~>5.1' 'dotenv~>2.1'
+yes | pacgem 'unicorn~>5.1' 'dotenv~>2.1'
 
 echo -e "$white :: Installing bundler and building bundle... :: $no_colour"
 gem install bundler
