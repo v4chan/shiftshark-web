@@ -8,8 +8,8 @@ Install gems, set up database as follows:
 
 ```bash
 bundle install
-rake db:create
-rake db:migrate
+rails db:create
+rails db:migrate
 ```
 
 Launch the server, and you're ready to go:
