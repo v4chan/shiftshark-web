@@ -1,6 +1,6 @@
 # ShiftShark
 
-## Development Setup (general)
+## Development Setup (General)
 
 Install Postgres, ruby, bundler. If necessary, add users to postgres (see dev.env file for username).
 
@@ -18,14 +18,14 @@ Launch the server, and you're ready to go:
 rails server
 ```
 
-## Development Setup (archlinux)
+## Development Setup (Archlinux)
 
 ```bash
 deploy/setup.sh
 deploy/db.sh
 ```
 
-## Deployment (archlinux)
+## Deployment (Archlinux)
 First install the app. Replace `target.env` with the desired env file.
 
 ```bash
