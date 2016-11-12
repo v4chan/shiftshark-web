@@ -13,4 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+
+// Include Ink Framework
+//= require modernizr
+//= require holder
+//= require ink-all
+//= require html5shiv
+//= require autoload
+
 //= require_tree .

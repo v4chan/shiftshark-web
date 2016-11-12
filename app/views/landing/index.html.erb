@@ -1,2 +1,52 @@
-<h1>Landing#index</h1>
-<p>Test test</p>
+<% content_for :view_specific_css do %>
+	<%= stylesheet_link_tag "whatever" %>
+<% end %>
+
+<div class="ink-grid">
+	<!--[if lte IE 9 ]>
+	<div class="ink-alert basic" role="alert">
+		<button class="ink-dismiss">&times;</button>
+		<p><strong>You are using an outdated Internet Explorer version.</strong>
+			Please <a href="http://browsehappy.com/">upgrade to a modern browser</a> to improve your web experience.</p>
+	</div>
+	-->
+
+	<header class="vertical-space">
+		<h1>ShiftShark<small>test test</small></h1>
+		<nav class="ink-navigation">
+			<ul class="menu horizontal black">
+				<li class="active"><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="column-group gutters">
+		<div class="all-100">
+			<h2>heading</h2>
+			<img src="holder.js/1650x928/auto/ink" alt="">
+		</div>
+	</div>
+	<div class="column-group gutters">
+		<div class="all-50 small-100 tiny-100">
+			<h3>heading</h3>
+			<img src="holder.js/1200x600/auto/ink" alt="">
+			<p class="quarter-top-space">"Red is not the right word," was the reply. "The plague was scarlet.  The whole face and body turned scarlet in an hour's time. Don't I  know? Didn't I see enough of it? And I am telling you it was scarlet  because&mdash;well, because it was scarlet. There is no other word for it."</p>
+		</div>
+		<div class="all-50 small-100 tiny-100">
+			<h3>heading</h3>
+			<img src="holder.js/1200x600/auto/ink" alt="">
+			<p class="quarter-top-space">"Red is not the right word," was the reply. "The plague was scarlet.  The whole face and body turned scarlet in an hour's time. Don't I  know? Didn't I see enough of it? And I am telling you it was scarlet  because&mdash;well, because it was scarlet. There is no other word for it."</p>
+		</div>
+	</div>
+</div>
+<footer class="clearfix">
+	<div class="ink-grid">
+		<ul class="unstyled inline half-vertical-space">
+			<li class="active"><a href="#">About</a></li>
+			<li><a href="#">Sitemap</a></li>
+			<li><a href="#">Contacts</a></li>
+		</ul>
+		<p class="note">Identification of the owner of the copyright, either by name, abbreviation, or other designation by which it is generally known.</p>
+	</div>
+</footer>
