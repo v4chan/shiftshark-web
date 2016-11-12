@@ -1,6 +1,4 @@
-*.env
 !.env
-!dev.env
 .bundle
 .byebug_history
 .DS_Store
