@@ -3,6 +3,10 @@ body {
 	background: #ededed;
 }
 
+h1 small, h2 small, h3 small, h4 small {
+	color: #444;
+}
+
 header h1 small:before  {
 	content: "|";
 	margin: 0 0.5em;

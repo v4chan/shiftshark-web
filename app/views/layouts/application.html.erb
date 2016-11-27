@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- meta -->
+		<title>ShiftShark</title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-		<title>ShiftShark</title>
 		<%= csrf_meta_tags %>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-		<link rel="shortcut icon" href="favicon.ico">
+		<!-- icon -->
+		<%= favicon_link_tag 'favicon.ico' %>
 
-		<%= stylesheet_link_tag 'application',
-			media: 'all', 'data-turbolinks-track': 'reload' %>
+		<!-- css -->
+		<%= stylesheet_link_tag 'application-all', media: 'all',
+			'data-turbolinks-track': 'reload' %>
+		<!--[if lte IE 8]>
+			<%= stylesheet_link_tag "application-ie", :media => "all", '
+				data-turbolinks-track': 'reload' %>
+		<![endif]-->
+		<%= yield :view_specific_css %>
+
+		<!-- js -->
 		<%= javascript_include_tag 'application',
 			'data-turbolinks-track': 'reload' %>
-		<%= yield :view_specific_css %>
 	</head>
 
 	<body>
