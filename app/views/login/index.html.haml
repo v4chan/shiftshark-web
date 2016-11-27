@@ -1,0 +1,49 @@
+.ink-grid
+	/[if lte IE 9]
+		.ink-alert.basic{ role:"alert"}
+			%button.ink-dismiss &times;
+			%p
+				%strong You are using an outdated Internet Explorer version.</strong>
+				Please
+				%a{ href: "http://browsehappy.com/"} upgrade to a modern browser</a>
+				to improve your web experience.
+
+	%header.vertical-space
+		%h1
+			ShiftShark
+			%small test test
+		%nav.ink-navigation
+			%ul.menu.horizontal.black
+				%li.active
+					%a( href="#") item
+				%li
+					%a( href="#") item
+				%li
+					%a( href="#") item
+
+	.column-group.gutters
+		.all-100
+			%h2 heading
+			%img( data-src="holder.js/1650x928/auto/ink" alt="")
+
+	.column-group.gutters
+		.all-50.small-100.tiny-100
+			%h3 heading
+			%img( data-src="holder.js/1200x600/auto/ink" alt="")
+			%p.quarter-top-space "Red is not the right word," was the reply. "The plague was scarlet.  The whole face and body turned scarlet in an hour's time. Don't I  know? Didn't I see enough of it? And I am telling you it was scarlet  because&mdash;well, because it was scarlet. There is no other word for it."
+
+		.all-50.small-100.tiny-100
+			%h3 heading
+			%img( data-src="holder.js/1200x600/auto/ink" alt="")
+			%p.quarter-top-space "Red is not the right word," was the reply. "The plague was scarlet.  The whole face and body turned scarlet in an hour's time. Don't I  know? Didn't I see enough of it? And I am telling you it was scarlet  because&mdash;well, because it was scarlet. There is no other word for it."
+
+%footer.clearfix
+	.ink-grid
+		%ul.unstyled.inline.half-vertical-space
+			%li.active
+				%a( href="#") About
+			%li
+				%a( href="#") Sitemap
+			%li
+				%a( href="#") Contacts
+		%p.note Identification of the owner of the copyright, either by name, abbreviation, or other designation by which it is generally known.
