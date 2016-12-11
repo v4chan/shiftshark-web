@@ -1,4 +1,3 @@
-
 body {
 	background: #ededed;
 }
@@ -15,4 +14,7 @@ header h1 small:before  {
 
 footer {
 	background: #ccc;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
 }
